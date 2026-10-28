@@ -1,0 +1,15 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[features]
+default = ["desktop"]
+desktop = ["dioxus/desktop"]
+web = ["dioxus/web"]
+
+[dependencies]
+# Bump `tag` to upgrade the shell, then run `cargo update -p app-shell`.
+app-shell = { git = "{{shell_repo}}", tag = "{{shell_tag}}" }
+dioxus = { version = "0.7", features = ["lib", "launch", "logger"] }

@@ -1,0 +1,7 @@
+[template]
+cargo_generate_version = ">=0.21"
+
+[placeholders]
+app_title = { type = "string", prompt = "App title (title bar + window)?", default = "My App" }
+shell_repo = { type = "string", prompt = "app-shell git URL?", default = "<REPO_URL>" }
+shell_tag = { type = "string", prompt = "app-shell tag?", default = "v0.1.0" }
