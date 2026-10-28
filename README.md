@@ -41,9 +41,9 @@ crate at a git tag, so every app gets the same layout:
 
 ```bash
 cargo install cargo-generate          # once
-cargo generate --git <REPO_URL> template --name my-app
+cargo generate --git https://github.com/joneseysinno/JoInn-Template template --name my-app
 # or, with the Dioxus CLI:
-dx new my-app --template <REPO_URL> --subtemplate template
+dx new my-app --template https://github.com/joneseysinno/JoInn-Template --subtemplate template
 ```
 
 You are asked for the app title, the `app-shell` git URL and the tag to pin.
@@ -59,7 +59,7 @@ checkout without touching its dependency line:
 
 ```toml
 # in the app's Cargo.toml
-[patch."<REPO_URL>"]
+[patch."https://github.com/joneseysinno/JoInn-Template"]
 app-shell = { path = "D:/Rust/Dioxus/JoInn Template/crates/app-shell" }
 ```
 
