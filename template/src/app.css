@@ -9,11 +9,11 @@
  * .as-root { --as-rail-w: 44px; }
  */
 
+.app-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .app-pad { padding: 12px; }
 .app-muted { color: var(--as-muted); }
 .app-viewport { padding: 24px; }
 .app-viewport h2 { margin: 0 0 4px; font-size: 20px; }
-.app-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .app-props { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; padding: 12px; }
 .app-props dt { color: var(--as-muted); }
 .app-props dd { margin: 0; font-family: var(--as-mono); }

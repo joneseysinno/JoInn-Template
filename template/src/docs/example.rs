@@ -104,6 +104,6 @@ fn Status() -> Element {
     let id = use_document().map(|d| d.id).unwrap_or_default();
     let st = state(&id);
     rsx! {
-        span { "{st.items.len()} items" }
+        span { "items: {st.items.len()}" }
     }
 }
